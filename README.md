@@ -12,6 +12,8 @@
 
 ## 4. What is the purpose of the interface `CommandLineRunner`?
 
+> Interface used to indicate that a bean should _run_ when it is contained within a `Spring` application. Multiple `CommandLineRunner` beans can be defined within the same application context and can be ordered using the `Ordered` interface or `@Order` annotation. [JAVADOC of `Spring`]
+
 ## 5. What is the difference between the interface `CommandLineRunner` and `ApplicationRunner`?
 
 The difference between these two interfaces is in their `run` method arguments type:
