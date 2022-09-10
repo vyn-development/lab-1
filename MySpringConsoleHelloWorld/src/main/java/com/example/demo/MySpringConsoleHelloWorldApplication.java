@@ -8,13 +8,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MySpringConsoleHelloWorldApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
+		System.out.println("Begin of main");
 		SpringApplication.run(MySpringConsoleHelloWorldApplication.class, args);
+		System.out.println("End of main");
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Hello from Spring Boot!");
 	}
 	
 }
