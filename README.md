@@ -6,7 +6,7 @@
 
 ## 2. Why do we need `pom.xml`?
 
-> It is an XML file that contains information about the project and configuration details used by `Maven` to build the project. [[Link]](](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html))
+> It is an XML file that contains information about the project and configuration details used by `Maven` to build the project. [[Link]](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 
 ## 3. Why do we need `@SpringBootApplication` annotation? What will happen if we remove it?
 
