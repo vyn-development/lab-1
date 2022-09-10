@@ -31,3 +31,5 @@ public interface ApplicationRunner {
   void run(ApplicationArguments args) throws Exception;
 }
 ```
+
+So that, these interfaces must be used in different situations depends on your need in getting values.
