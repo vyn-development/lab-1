@@ -4,6 +4,8 @@
 
 ## 2. Why do we need `pom.xml`?
 
+> It is an XML file that contains information about the project and configuration details used by [`Maven`](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html) to build the project.
+
 ## 3. Why do we need `@SpringBootApplication` annotation? What will happen if we remove it?
 
 ## 4. What is the purpose of the interface `CommandLineRunner`?
