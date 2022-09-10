@@ -1,6 +1,6 @@
 # Lab 1
 
-## 1.What is the differece between `Spring Framework` and `Spring Boot`?
+## 1. What is the differece between `Spring Framework` and `Spring Boot`?
 
 > `Spring Framework` helps to create a loosely coupled application. `Spring Boot` helps to create a stand-alone application. In the `Spring Framework` to test the `Spring` project, we need to set up the servers explicitly. `Spring Boot` offers built-in or embedded servers such as `Tomcat` and `jetty`. [[Link]](https://www.interviewbit.com/blog/spring-vs-spring-boot/)
 
