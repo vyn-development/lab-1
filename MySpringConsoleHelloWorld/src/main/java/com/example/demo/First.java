@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Order(1)
-public class First implements numberedClass, CommandLineRunner {
+public class First implements Numbered, CommandLineRunner {
 	
 	@Override
 	public void printText() {
@@ -15,7 +15,6 @@ public class First implements numberedClass, CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		printText();
-		
+		printText();	
 	}
 }
