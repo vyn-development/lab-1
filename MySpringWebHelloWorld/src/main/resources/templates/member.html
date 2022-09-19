@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/css/personal_style.css" rel="stylesheet" type="text/css" />
-    <title th:text="${member.getFullName()}"></title>
-  </head>
-  <body>
-    <div class="container">
-        <div class="wrapper">
-        <div class="person_class">
-            <div class="person_header">
-                <div class="person_img">
-                    <img src="/img/person_icon.png" th:alt="${member.getFullName()}">
-                </div>
-                <div class="name">
-                    <p th:text="${member.getFullName()}"></p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/styles/common.css" rel="stylesheet" type="text/css" />
+        <link href="/styles/member.css" rel="stylesheet" type="text/css" />
+        <title th:text="${member.getFullName()}"></title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div class="member">
+                    <div class="member__header">
+                        <div class="member__photo">
+                            <img
+                                class="member__image"
+                                src="/images/icons/person.png"
+                                th:alt="${member.getFullName()}"
+                            />
+                        </div>
+                        <p
+                            class="member__fullName"
+                            th:text="${member.getFullName()}"
+                        ></p>
+                    </div>
+                    <div class="member__description">
+                        <p th:text="${member.getDescription()}"></p>
+                    </div>
                 </div>
             </div>
-            <div class="person_text">
-                <p th:text="${member.getDescription()}"}>
-                </p>
-            </div>
-        </div>
-    </div>
-  </body>
+        </main>
+    </body>
 </html>
