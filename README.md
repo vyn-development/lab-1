@@ -10,6 +10,9 @@
 
 ## 3. Why do we need `@SpringBootApplication` annotation? What will happen if we remove it?
 
+>We use this annotation to mark the main class of a Spring Boot application, to enable a host of features, e.g. Java-based Spring configuration, component scanning, and in particular for enabling Spring Boot's auto-configuration feature. 
+> If we remove this annotation, then the Spring Boot auto-configuration mechanism will not turn on and scanning @Component for the package in which the application is located and will not be able to register additional beans in the context or import additional configuration classes
+
 ## 4. What is the purpose of the interface `CommandLineRunner`?
 
 > Interface used to indicate that a bean should _run_ when it is contained within a `Spring` application. Multiple `CommandLineRunner` beans can be defined within the same application context and can be ordered using the `Ordered` interface or `@Order` annotation. [JAVADOC of `Spring`]
