@@ -1,5 +1,5 @@
 package com.example.demo;
 
-public interface numberedClass {
+public interface Ordered {
 	public void printText();
 }
