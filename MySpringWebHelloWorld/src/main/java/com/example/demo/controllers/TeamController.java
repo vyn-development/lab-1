@@ -14,11 +14,11 @@ import com.example.demo.entities.Person;
 @RequestMapping("/team")
 public class TeamController {
 	private HashMap<String, Person> team = new HashMap<String, Person>();
-	
+
 	public TeamController() {
-		team.put("Yaroslav", new Person("Yaroslav", "", ""));
-		team.put("Vladyslav", new Person("Vladyslav", "", ""));
-		team.put("Anastasia", new Person("Anastasia", "", ""));
+		team.put("Yaroslav", new Person("Yaroslav", "", "The description of Yaroslav"));
+		team.put("Vladyslav", new Person("Vladyslav", "", "The description of Vladyslav"));
+		team.put("Anastasia", new Person("Anastasia", "", "The description of Anastasia"));
 	}
 
 	@GetMapping
