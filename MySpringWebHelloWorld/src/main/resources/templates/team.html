@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <title>Our team</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="wrapper">
+        <div class="person_class" th:each="member : ${team}">
+            <div class="person_img">
+                <img src="/img/person_icon.png" th:alt="${member.getFullName()}">
+            </div>
+            <div class="name">
+                <p th:text="${member.getFullName()}"></p>
+            </div>
+            <div class="person_text">
+                <p th:text="${member.getFullName()}"></p>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

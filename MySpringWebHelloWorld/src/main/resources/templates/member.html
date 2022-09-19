@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="personal_style.css" rel="stylesheet" type="text/css" />
-    <title>Person_One</title>
+    <link href="/css/personal_style.css" rel="stylesheet" type="text/css" />
+    <title th:text="${member.getFullName()}"></title>
   </head>
   <body>
     <div class="container">
@@ -13,17 +13,14 @@
         <div class="person_class">
             <div class="person_header">
                 <div class="person_img">
-                    <img src="/MySpringWebHelloWorld/src/main/resources/static/img/person_icon.png" alt="person_icon">
+                    <img src="/img/person_icon.png" th:alt="${member.getFullName()}">
                 </div>
                 <div class="name">
-                    <p>Name Surname</p>
+                    <p th:text="${member.getFullName()}"></p>
                 </div>
             </div>
             <div class="person_text">
-                <p>
-                    ⠀⠀Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor consequuntur fuga molestias, 
-                    distinctio debitis praesentium repellat architecto voluptate voluptatem 
-                    unde ex accusamus deserunt asperiores a ad deleniti.
+                <p th:text="${member.getDescription()}"}>
                 </p>
             </div>
         </div>
